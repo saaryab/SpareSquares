@@ -14,5 +14,17 @@
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
 
+
+
   <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div class="matrix">
+    <div class="row" *ngFor="let row of cards;">
+      <div class="square"  *ngFor="let card of row;"
+       [style.transform]="'rotate('+card.rotation*90+'deg)'"
+       (click)="card.rotation = card.rotation + 1;">
+        <div *ngFor="let symbol of card.symbols; let i = index;" [class]="'symbol symbol-'+i">{{symbol}}</div>
+      </div>
+    </div>
+  </div>
+
 </ion-content>

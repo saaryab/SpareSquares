@@ -7,6 +7,49 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  cards = [
+    [
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+  ],[
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+  ],[
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+    {
+      symbols: ['@','#','$','%'],
+      rotation: 0,
+    },
+  ]
+  ];
+  symbols = ['@','#','$','%'];
   constructor(public navCtrl: NavController) {
 
   }
